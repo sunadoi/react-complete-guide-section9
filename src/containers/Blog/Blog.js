@@ -13,7 +13,6 @@ class Blog extends Component {
     error: false
   }
 
-
   componentDidMount () {
     axios.get('https://jsonplaceholder.typicode.com/posts')
     .then(response => {
