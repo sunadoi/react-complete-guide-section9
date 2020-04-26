@@ -28,7 +28,7 @@ class Blog extends Component {
     });
   }
 
-  postSelectHandler = (id) => {
+  postSelectedHandler = (id) => {
     this.setState({selectedPostId: id})
   }
 
@@ -39,7 +39,7 @@ class Blog extends Component {
           key={post.id}
           title={post.title}
           author={post.author}
-          clicked={() => this.postSelectHandler(post.id)} />
+          clicked={() => this.postSelectedHandler(post.id)} />
       )
     })
 
